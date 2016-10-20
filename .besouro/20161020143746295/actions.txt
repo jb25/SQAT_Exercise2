@@ -261,3 +261,13 @@ EditAction 1476968486474 TestPlanetExplorer.java 1149 8 17 7
 UnitTestCaseAction 1476968487170 TestPlanetExplorer.java FAIL
 UnitTestSessionAction 1476968487171 TestPlanetExplorer.java FAIL
 EditAction 1476968535005 PlanetExplorer.java 3476 17 32 0
+UnitTestCaseAction 1476968535583 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1476968535584 TestPlanetExplorer.java FAIL
+RefactoringAction 1476968801977 PlanetExplorer.java ADD Character turnRight(char)/2 METHOD
+RefactoringAction 1476968809499 PlanetExplorer.java RENAME turnRight(char)/2=>Character Forward(char) METHOD
+RefactoringAction 1476968823030 PlanetExplorer.java RENAME Forward(char)=>Character Forward() METHOD
+RefactoringAction 1476968998088 PlanetExplorer.java ADD void Forward()/2 METHOD
+RefactoringAction 1476969001615 PlanetExplorer.java RENAME Forward()/2=>void Back() METHOD
+RefactoringAction 1476969003136 PlanetExplorer.java RENAME Back()=>void Backwrd() METHOD
+RefactoringAction 1476969018800 PlanetExplorer.java RENAME Backwrd()=>void Backward() METHOD
+EditAction 1476969070637 PlanetExplorer.java 3910 19 34 0

@@ -68,12 +68,12 @@ public class PlanetExplorer {
 			pos=pos.replace(pos.charAt(pos.length()-2), turnLeft(getDir()));
 		} if (command.equals("f")) {
 			dir=pos.charAt(pos.length()-2);
-			setPosY(posY+1);
+			Forward();
 			pos="("+getPosX()+","+getPosY()+","+dir+")";
 
 		} if (command.equals("b")) {
 			dir=pos.charAt(pos.length()-2);
-			setPosX(posX-1);
+			Backward();
 			pos="("+getPosX()+","+getPosY()+","+dir+")";
 
 		}
@@ -118,6 +118,44 @@ public class PlanetExplorer {
 
 		}
 		return getDir();
+	}
+	public void Forward(){
+		switch (getDir()) {
+		case 'N':
+			setPosY(posY+1);
+			break;
+		case 'E':
+			setX(getX()+1);
+			break;
+		case 'S':
+			setPosY(posY-1);
+			break;
+
+		case 'W':
+			setX(getX()-1);
+			break;
+
+
+		}
+	}
+	public void Backward(){
+		switch (getDir()) {
+		case 'N':
+			setPosY(posY-1);
+			break;
+		case 'E':
+			setX(getX()-1);
+			break;
+		case 'S':
+			setPosY(posY+1);
+			break;
+
+		case 'W':
+			setX(getX()+1);
+			break;
+
+
+		}
 	}
 	public int getX() {
 		return x;
