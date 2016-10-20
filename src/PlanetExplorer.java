@@ -60,13 +60,11 @@ public class PlanetExplorer {
 		if (command=="") {
 			return pos;
 		} else if (command.equals("r")) {
-			System.out.println(pos);
-			pos.replace(pos.charAt(5), turnRight(pos.charAt(pos.length()-2)));
-			System.out.println(turnRight(pos.charAt(pos.length()-2)));
+			pos.replace(pos.charAt(pos.length()-2), turnRight(pos.charAt(pos.length()-2)));
 
 			return pos;
 		}else if (command.equals("l")) {
-			pos.replace(pos.charAt(5), turnLeft(pos.charAt(pos.length()-2)));
+			pos.replace(pos.charAt(pos.length()-2), turnLeft(pos.charAt(pos.length()-2)));
 			return pos;
 		}
 
