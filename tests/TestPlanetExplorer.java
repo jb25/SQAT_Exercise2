@@ -49,8 +49,8 @@ public class TestPlanetExplorer {
 	
 	@Test
 	public void test_TurnBackward() {
-		pe.setPosX(pe.getPosX()-1);
+		pe.setPosX(pe.getPosX()+5);
 		String status= pe.executeCommand("b");
-		assertEquals("(0,0,N)", status);
+		assertEquals("(4,0,N)", status);
 	}
 }
