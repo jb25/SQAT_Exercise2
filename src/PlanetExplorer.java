@@ -8,7 +8,9 @@ public class PlanetExplorer {
 
 	private int x;
 	private int y;
-	private String f;
+	private int posX;
+	private int posY;
+	//	private String f;
 
 	public PlanetExplorer(int x, int y, String obstacles){
 		/*	x and y represent the size of the grid.
@@ -19,21 +21,21 @@ public class PlanetExplorer {
 
 		 */
 
-		this.x=x;
-		this.y=y;
+		setX(x);
+		setY(y);
 
 	}
 
 	public PlanetExplorer(int x, int y) {
 		// TODO Auto-generated constructor stub
-		this.x=x;
-		this.y=y;
+		setX(x);
+		setY(y);
 	}
 
 	public String executeCommand(String command){
 		String pos="(";
 		pos+=getX();
-		pos+=".";
+		pos+=",";
 		pos+= getY();
 		pos+=",";
 		pos+="N";
@@ -71,6 +73,22 @@ public class PlanetExplorer {
 
 	public void setY(int y) {
 		this.y = y;
+	}
+
+	public int getPosX() {
+		return posX;
+	}
+
+	public void setPosX(int posX) {
+		this.posX = posX;
+	}
+
+	public int getPosY() {
+		return posY;
+	}
+
+	public void setPosY(int posY) {
+		this.posY = posY;
 	}
 
 

@@ -35,3 +35,23 @@ CompilationAction 1476964652347 PlanetExplorer.java
 CompilationAction 1476964675285 PlanetExplorer.java
 CompilationAction 1476964675438 PlanetExplorer.java
 EditAction 1476964686812 PlanetExplorer.java 1757 7 17 0
+UnitTestCaseAction 1476964688971 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1476964688972 TestPlanetExplorer.java FAIL
+RefactoringAction 1476964838891 PlanetExplorer.java ADD int x/2 FIELD
+RefactoringAction 1476964838892 PlanetExplorer.java ADD int y/2 FIELD
+RefactoringAction 1476964842910 PlanetExplorer.java RENAME x/2=>int posX FIELD
+RefactoringAction 1476964845931 PlanetExplorer.java RENAME y/2=>int posY FIELD
+RefactoringAction 1476964855957 PlanetExplorer.java REMOVE f FIELD
+RefactoringAction 1476964866018 PlanetExplorer.java ADD int getPosX() METHOD
+RefactoringAction 1476964866020 PlanetExplorer.java ADD void setPosX(int) METHOD
+RefactoringAction 1476964866022 PlanetExplorer.java ADD int getPosY() METHOD
+RefactoringAction 1476964866023 PlanetExplorer.java ADD void setPosY(int) METHOD
+RefactoringAction 1476964942587 TestPlanetExplorer.java ADD PlanetExplorer pe FIELD
+RefactoringAction 1476964950114 TestPlanetExplorer.java ADD void test_LandingEmptyComand()/2 METHOD
+RefactoringAction 1476964957136 TestPlanetExplorer.java RENAME test_LandingEmptyComand()/2=>void test_TurnRight() METHOD
+RefactoringAction 1476964968665 TestPlanetExplorer.java ADD void test_TurnRight()/2 METHOD
+RefactoringAction 1476964970686 TestPlanetExplorer.java RENAME test_TurnRight()/2=>void test_TurnRigh() METHOD
+RefactoringAction 1476964971714 TestPlanetExplorer.java RENAME test_TurnRigh()=>void test_Turn() METHOD
+RefactoringAction 1476964973246 TestPlanetExplorer.java RENAME test_Turn()=>void test_TurnLeft() METHOD
+RefactoringAction 1476964984347 TestPlanetExplorer.java ADD import org.junit.Assert.* IMPORT
+EditAction 1476965022937 PlanetExplorer.java 1994 11 21 0
