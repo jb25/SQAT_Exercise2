@@ -16,3 +16,7 @@ RefactoringAction 1476963972640 PlanetExplorer.java ADD void setX(int) METHOD
 RefactoringAction 1476963972641 PlanetExplorer.java ADD int getY() METHOD
 RefactoringAction 1476963972641 PlanetExplorer.java ADD void setY(int) METHOD
 EditAction 1476964030588 TestPlanetExplorer.java 368 2 5 1
+CompilationAction 1476964030784 TestPlanetExplorer.java
+CompilationAction 1476964030785 TestPlanetExplorer.java
+CompilationAction 1476964030785 TestPlanetExplorer.java
+EditAction 1476964041734 PlanetExplorer.java 1617 7 9 0
