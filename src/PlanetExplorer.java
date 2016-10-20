@@ -149,12 +149,9 @@ public class PlanetExplorer {
 		case 'S':
 			setPosY(posY+1);
 			break;
-
 		case 'W':
 			setX(getX()+1);
 			break;
-
-
 		}
 	}
 	public int getX() {
