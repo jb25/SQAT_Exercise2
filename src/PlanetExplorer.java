@@ -95,11 +95,9 @@ public class PlanetExplorer {
 		return getDir();
 	}
 	public Character turnLeft(char pointTo){
-		System.out.println(pointTo);
 		switch (pointTo) {
 		case 'N':
 			setDir('W');
-			System.out.println(getDir());
 		case 'E':
 			setDir( 'N');
 		case 'S':
@@ -108,6 +106,7 @@ public class PlanetExplorer {
 			setDir( 'S');
 
 		}
+		System.out.println(getDir());
 		return getDir();
 	}
 	public int getX() {
