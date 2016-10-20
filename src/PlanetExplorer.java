@@ -84,7 +84,7 @@ public class PlanetExplorer {
 		
 		
 		
-
+		wrapping()
 		
 		pos="("+getPosX()+","+getPosY()+","+dir+")";
 		return pos;
