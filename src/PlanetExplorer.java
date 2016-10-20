@@ -61,8 +61,6 @@ public class PlanetExplorer {
 			return pos;
 		} else if (command.equals("r")) {
 			pos.replace(pos.charAt(pos.length()-2), turnRight(pos.charAt(pos.length()-2)));
-System.out.println(pos.charAt(pos.length()-2));
-System.out.println(turnRight(pos.charAt(pos.length()-2)));
 			return pos;
 		}else if (command.equals("l")) {
 			pos.replace(pos.charAt(pos.length()-2), turnLeft(pos.charAt(pos.length()-2)));
@@ -70,7 +68,6 @@ System.out.println(turnRight(pos.charAt(pos.length()-2)));
 		}
 
 
-		return pos;
 	}
 	public Character turnRight(char pointTo){
 		switch (pointTo) {
