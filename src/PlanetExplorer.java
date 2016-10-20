@@ -45,6 +45,7 @@ public class PlanetExplorer {
 	}
 
 	public String executeCommand(String command){
+		pos="("+getPosX()+","+getPosY()+","+dir+")";
 
 		/* The command string is composed of "f" (forward), "b" (backward), "l" (left) and "r" (right)
 		 * Example: 
