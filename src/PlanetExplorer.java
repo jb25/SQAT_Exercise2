@@ -74,6 +74,7 @@ public class PlanetExplorer {
 		return pos;
 	}
 	public Character turnRight(char pointTo){
+		System.out.println(pointTo);
 		switch (pointTo) {
 		case 'N':
 			return 'E';
