@@ -40,4 +40,17 @@ public class TestPlanetExplorer {
 		String status= pe.executeCommand("l");
 		assertEquals("(0,0,W)", status);
 	}
+
+	@Test
+	public void test_TurnFordward() {
+		String status= pe.executeCommand("f");
+		assertEquals("(0,1,N)", status);
+	}
+	
+	@Test
+	public void test_TurnBackward() {
+		pe.setPosX(pe.getPosX()-1);
+		String status= pe.executeCommand("b");
+		assertEquals("(0,0,N)", status);
+	}
 }
