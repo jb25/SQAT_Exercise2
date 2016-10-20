@@ -86,6 +86,7 @@ public class PlanetExplorer {
 		switch (pointTo) {
 		case 'N':
 			setDir( 'E');
+			break;
 		case 'E':
 			setDir( 'S');
 		case 'S':
