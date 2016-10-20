@@ -54,11 +54,19 @@ public class PlanetExplorer {
 
 		if (command=="") {
 			return pos;
+		} else if (command.equals("r")) {
+
+
+
 		}
+
+
 		return pos;
+	}
+	public void turnRight(){
+
 
 	}
-
 	public int getX() {
 		return x;
 	}
