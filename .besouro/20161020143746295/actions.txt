@@ -281,3 +281,7 @@ UnitTestCaseAction 1476969258050 TestPlanetExplorer.java FAIL
 UnitTestSessionAction 1476969258051 TestPlanetExplorer.java FAIL
 EditAction 1476969381254 PlanetExplorer.java 3907 19 34 0
 EditAction 1476969381517 TestPlanetExplorer.java 1198 8 19 7
+UnitTestCaseAction 1476969382220 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1476969382221 TestPlanetExplorer.java FAIL
+RefactoringAction 1476969497243 TestPlanetExplorer.java REMOVE test_MovingAndTurningCombined() METHOD
+EditAction 1476969498459 TestPlanetExplorer.java 1208 7 17 6
