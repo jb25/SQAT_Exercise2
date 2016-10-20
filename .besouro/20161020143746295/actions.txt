@@ -150,3 +150,11 @@ EditAction 1476966929504 PlanetExplorer.java 3011 13 31 0
 UnitTestCaseAction 1476966930379 TestPlanetExplorer.java FAIL
 UnitTestSessionAction 1476966930379 TestPlanetExplorer.java FAIL
 EditAction 1476966958656 TestPlanetExplorer.java 1010 7 15 6
+UnitTestCaseAction 1476966959213 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1476966959213 TestPlanetExplorer.java FAIL
+RefactoringAction 1476967022219 TestPlanetExplorer.java ADD void test_TurnBackward()/2 METHOD
+RefactoringAction 1476967031240 TestPlanetExplorer.java RENAME test_TurnBackward()/2=>void test_MovingAnd() METHOD
+RefactoringAction 1476967032253 TestPlanetExplorer.java RENAME test_MovingAnd()=>void test_MovingAndT() METHOD
+RefactoringAction 1476967034267 TestPlanetExplorer.java RENAME test_MovingAndT()=>void test_MovingAndTurning() METHOD
+RefactoringAction 1476967036787 TestPlanetExplorer.java RENAME test_MovingAndTurning()=>void test_MovingAndTurningCombined() METHOD
+EditAction 1476967124873 TestPlanetExplorer.java 1149 8 17 7

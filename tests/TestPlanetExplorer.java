@@ -53,4 +53,10 @@ public class TestPlanetExplorer {
 		String status= pe.executeCommand("b");
 		assertEquals("(4,0,N)", status);
 	}
+	
+	@Test
+	public void test_MovingAndTurningCombined() {
+		String status= pe.executeCommand("ffrff");
+		assertEquals("(2,2,E)", status);
+	}
 }
