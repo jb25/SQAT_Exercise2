@@ -59,9 +59,9 @@ public class PlanetExplorer {
 
 		if (command=="") {
 		} else if (command.equals("r")) {
-			pos.replace(pos.charAt(pos.length()-2), turnRight(pos.charAt(pos.length()-2)));
+			pos= pos.replace(pos.charAt(pos.length()-2), turnRight(pos.charAt(pos.length()-2)));
 		}else if (command.equals("l")) {
-			pos.replace(pos.charAt(pos.length()-2), turnLeft(pos.charAt(pos.length()-2)));
+			pos=pos.replace(pos.charAt(pos.length()-2), turnLeft(pos.charAt(pos.length()-2)));
 		}
 
 		return pos;
