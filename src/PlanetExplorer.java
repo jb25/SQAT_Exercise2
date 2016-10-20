@@ -57,14 +57,18 @@ public class PlanetExplorer {
 		 */
 
 		if (command.length() > 1) {
-			this.executeCommand(command.substring(0, 1));
-			return this.executeCommand(command.substring(1, command.length()));
 			for (int i = 0; i < command.length(); i++) {
+				if (i!=command.length()-1) {
+					this.executeCommand(command.substring(i, i+1));
+				}else {
+					this.executeCommand(command.substring(i, command.length()-1));
 
+					
+				}
+				
 			}
 
-		}
-		if (command=="") {
+		}else if (command=="") {
 		} else if (command.equals("r")) {
 			pos= pos.replace(pos.charAt(pos.length()-2), turnRight(pos.charAt(pos.length()-2)));
 		}else if (command.equals("l")) {
