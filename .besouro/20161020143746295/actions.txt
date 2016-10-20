@@ -242,3 +242,6 @@ RefactoringAction 1476968363633 TestPlanetExplorer.java REMOVE test_TurnRight() 
 RefactoringAction 1476968363633 TestPlanetExplorer.java REMOVE test_PlanetCreate() METHOD
 RefactoringAction 1476968363634 TestPlanetExplorer.java REMOVE test_TurnBackward() METHOD
 EditAction 1476968364504 TestPlanetExplorer.java 1243 1 2 1
+UnitTestCaseAction 1476968365222 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1476968365223 TestPlanetExplorer.java FAIL
+EditAction 1476968405492 PlanetExplorer.java 3573 17 34 0
