@@ -61,7 +61,10 @@ public class PlanetExplorer {
 
 		}else if (command=="") {
 		} else if (command.equals("r")) {
+			System.out.println(pos);
 			pos= pos.replace(pos.charAt(pos.length()-2), turnRight(getDir()));
+			System.out.println(pos);
+
 		}else if (command.equals("l")) {
 			pos=pos.replace(pos.charAt(pos.length()-2), turnLeft(getDir()));
 		} if (command.equals("f")) {
@@ -106,7 +109,6 @@ public class PlanetExplorer {
 			setDir( 'S');
 
 		}
-		System.out.println(getDir());
 		return getDir();
 	}
 	public int getX() {
