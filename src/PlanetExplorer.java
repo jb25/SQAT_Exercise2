@@ -62,7 +62,7 @@ public class PlanetExplorer {
 
 		}else if (command=="") {
 		} else if (command.equals("r")) {
-			pos= pos.replace(pos.charAt(pos.length()-2), getDir());
+			pos= pos.replace(pos.charAt(pos.length()-2), turnRight(pos.charAt(pos.length()-2)));
 		}else if (command.equals("l")) {
 			pos=pos.replace(pos.charAt(pos.length()-2), turnLeft(pos.charAt(pos.length()-2)));
 		} if (command.equals("f")) {
@@ -92,6 +92,7 @@ public class PlanetExplorer {
 			setDir( 'N');
 
 		}
+		System.out.println(getDir());
 		return getDir();
 	}
 	public Character turnLeft(char pointTo){
