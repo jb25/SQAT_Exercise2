@@ -11,6 +11,7 @@ public class PlanetExplorer {
 	private int posX;
 	private int posY;
 	private char dir;
+	private String pos="";
 	//	private String f;
 
 	public PlanetExplorer(int x, int y, String obstacles){
@@ -26,6 +27,9 @@ public class PlanetExplorer {
 		setY(y);
 		setPosX(0);
 		setPosY(0);
+		pos="("+getPosX()+","+getPosY()+","+"N"+")";
+		dir=pos.charAt(pos.length()-2);
+
 
 	}
 
@@ -35,16 +39,12 @@ public class PlanetExplorer {
 		setY(y);
 		setPosX(0);
 		setPosY(0);
+		pos="("+getPosX()+","+getPosY()+","+"N"+")";
+		dir=pos.charAt(pos.length()-2);
+
 	}
 
 	public String executeCommand(String command){
-		String pos="(";
-		pos+=getPosX();
-		pos+=",";
-		pos+= getPosY();
-		pos+=",";
-		pos+="N";
-		pos+=")";
 
 		/* The command string is composed of "f" (forward), "b" (backward), "l" (left) and "r" (right)
 		 * Example: 
@@ -57,40 +57,24 @@ public class PlanetExplorer {
 		 */
 
 		if (command.length() > 1) {
-			for (int i = 0; i < command.length(); i++) {
-				if (i!=command.length()-1) {
-					this.executeCommand(command.substring(i, i+1));
-				}else {
-					this.executeCommand(command.substring(i, command.length()-1));
-
-					
-				}
-				
-			}
+			pos= this.executeCommand(command.substring(0, 1));
+			return this.executeCommand(command.substring(1, command.length()));
 
 		}else if (command=="") {
 		} else if (command.equals("r")) {
-			pos= pos.replace(pos.charAt(pos.length()-2), turnRight(pos.charAt(pos.length()-2)));
+			pos= pos.replace(pos.charAt(pos.length()-2), getDir());
 		}else if (command.equals("l")) {
 			pos=pos.replace(pos.charAt(pos.length()-2), turnLeft(pos.charAt(pos.length()-2)));
 		} if (command.equals("f")) {
+			dir=pos.charAt(pos.length()-2);
 			setPosY(posY+1);
-			pos="(";
-			pos+=getPosX();
-			pos+=",";
-			pos+= getPosY();
-			pos+=",";
-			pos+="N";
-			pos+=")";
+			pos="("+getPosX()+","+getPosY()+","+dir+")";
+
 		} if (command.equals("b")) {
+			dir=pos.charAt(pos.length()-2);
 			setPosX(posX-1);
-			pos="(";
-			pos+=getPosX();
-			pos+=",";
-			pos+= getPosY();
-			pos+=",";
-			pos+="N";
-			pos+=")";
+			pos="("+getPosX()+","+getPosY()+","+dir+")";
+
 		}
 
 		return pos;
@@ -99,30 +83,30 @@ public class PlanetExplorer {
 	public Character turnRight(char pointTo){
 		switch (pointTo) {
 		case 'N':
-			return 'E';
+			setDir( 'E');
 		case 'E':
-			return 'S';
+			setDir( 'S');
 		case 'S':
-			return 'W';
+			setDir( 'W');
 		case 'W':
-			return 'N';
+			setDir( 'N');
 
 		}
-		return pointTo;
+		return getDir();
 	}
 	public Character turnLeft(char pointTo){
 		switch (pointTo) {
 		case 'N':
-			return 'W';
+			setDir('W');
 		case 'E':
-			return 'N';
+			setDir( 'N');
 		case 'S':
-			return 'E';
+			setDir( 'E');
 		case 'W':
-			return 'S';
+			setDir( 'S');
 
 		}
-		return pointTo;
+		return getDir();
 	}
 	public int getX() {
 		return x;
@@ -154,6 +138,22 @@ public class PlanetExplorer {
 
 	public void setPosY(int posY) {
 		this.posY = posY;
+	}
+
+	public char getDir() {
+		return dir;
+	}
+
+	public void setDir(char dir) {
+		this.dir = dir;
+	}
+
+	public String getPos() {
+		return pos;
+	}
+
+	public void setPos(String pos) {
+		this.pos = pos;
 	}
 
 

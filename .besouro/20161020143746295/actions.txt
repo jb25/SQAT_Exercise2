@@ -169,3 +169,16 @@ CompilationAction 1476967261258 PlanetExplorer.java
 UnitTestCaseAction 1476967261772 TestPlanetExplorer.java FAIL
 UnitTestSessionAction 1476967261773 TestPlanetExplorer.java FAIL
 EditAction 1476967387189 PlanetExplorer.java 3281 13 31 0
+RefactoringAction 1476967524682 PlanetExplorer.java ADD String pos FIELD
+RefactoringAction 1476967708157 PlanetExplorer.java ADD char getDir() METHOD
+RefactoringAction 1476967708165 PlanetExplorer.java ADD void setDir(char) METHOD
+RefactoringAction 1476967708170 PlanetExplorer.java ADD String getPos() METHOD
+RefactoringAction 1476967708171 PlanetExplorer.java ADD void setPos(String) METHOD
+UnitTestCaseAction 1476967821548 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1476967821548 TestPlanetExplorer.java FAIL
+RefactoringAction 1476967905522 PlanetExplorer.java RENAME PlanetExplorer(int, int)=>PlanetExplorer(int) METHOD
+RefactoringAction 1476967906545 PlanetExplorer.java RENAME PlanetExplorer(int)=>PlanetExplorer(int, int) METHOD
+CompilationAction 1476967910486 PlanetExplorer.java
+UnitTestCaseAction 1476967917111 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1476967917111 TestPlanetExplorer.java FAIL
+EditAction 1476967932418 PlanetExplorer.java 3400 17 32 0
