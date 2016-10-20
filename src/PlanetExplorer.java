@@ -86,6 +86,8 @@ public class PlanetExplorer {
 			setPosY(getPosY()-getY());
 		}
 
+		
+		pos="("+getPosX()+","+getPosY()+","+dir+")";
 		return pos;
 
 	}

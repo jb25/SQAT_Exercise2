@@ -347,3 +347,8 @@ RefactoringAction 1476970167734 TestPlanetExplorer.java ADD void test_executeCom
 RefactoringAction 1476970174249 TestPlanetExplorer.java RENAME test_executeCommand_wrapping()=>void testrapping() METHOD
 RefactoringAction 1476970175263 TestPlanetExplorer.java RENAME testrapping()=>void testWrapping() METHOD
 EditAction 1476970182344 TestPlanetExplorer.java 1318 9 21 8
+UnitTestCaseAction 1476970183081 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1476970183081 TestPlanetExplorer.testWrapping FAIL
+UnitTestCaseAction 1476970189260 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1476970189261 TestPlanetExplorer.java FAIL
+EditAction 1476970270237 PlanetExplorer.java 4308 19 34 0
