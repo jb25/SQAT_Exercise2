@@ -29,3 +29,9 @@ EditAction 1476964203782 TestPlanetExplorer.java 545 3 8 2
 RefactoringAction 1476964527822 PlanetExplorer.java ADD String facing FIELD
 RefactoringAction 1476964528847 PlanetExplorer.java RENAME facing=>String f FIELD
 EditAction 1476964637607 TestPlanetExplorer.java 547 3 8 2
+CompilationAction 1476964637807 PlanetExplorer.java
+CompilationAction 1476964652163 PlanetExplorer.java
+CompilationAction 1476964652347 PlanetExplorer.java
+CompilationAction 1476964675285 PlanetExplorer.java
+CompilationAction 1476964675438 PlanetExplorer.java
+EditAction 1476964686812 PlanetExplorer.java 1757 7 17 0
