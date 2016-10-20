@@ -56,25 +56,15 @@ public class PlanetExplorer {
 		 * Where pos_x and pos_y are the final coordinates, facing is the current direction the explorer is pointing to (N,S,W,E).
 		 * The return string should also contain a list of coordinates of the encountered obstacles. No white spaces.
 		 */
-		if (getPosX() < 0) {
-			setPosX(getPosX()+getX());
-		} else if (getPosY() < 0) {
-			setPosY(getPosY()+getY());
-		} else if (getPosX()>= getX()) {
-			setPosX(getPosX()-getX());
-		} else if (getPosY() >= getY()) {
-			setPosY(getPosY()-getY());
-		}
-		pos="("+getPosX()+","+getPosY()+","+dir+")";
-System.out.println(pos);
 		
-		
+		wrapping();
 		
 		if (command.length() > 1) {
 			pos= this.executeCommand(command.substring(0, 1));
 			return this.executeCommand(command.substring(1, command.length()));
 
 		}else if (command=="") {
+			
 		} else if (command.equals("r")) {
 			pos= pos.replace(pos.charAt(pos.length()-2), turnRight(getDir()));
 
@@ -171,6 +161,19 @@ System.out.println(pos);
 		case 'W':
 			setPosX(getPosX()+1);
 			break;
+		}
+	}
+	
+	public void wrapping(){
+			
+		if (getPosX() < 0) {
+			setPosX(getPosX()+getX());
+		} else if (getPosY() < 0) {
+			setPosY(getPosY()+getY());
+		} else if (getPosX()>= getX()) {
+			setPosX(getPosX()-getX());
+		} else if (getPosY() >= getY()) {
+			setPosY(getPosY()-getY());
 		}
 	}
 	public int getX() {

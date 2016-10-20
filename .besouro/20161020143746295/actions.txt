@@ -358,3 +358,7 @@ EditAction 1476970326555 PlanetExplorer.java 4326 19 35 0
 UnitTestCaseAction 1476970327198 TestPlanetExplorer.java FAIL
 UnitTestSessionAction 1476970327199 TestPlanetExplorer.java FAIL
 EditAction 1476970347244 PlanetExplorer.java 4395 19 37 0
+UnitTestCaseAction 1476970347784 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1476970347784 TestPlanetExplorer.java FAIL
+RefactoringAction 1476970410798 PlanetExplorer.java ADD void wrapping() METHOD
+EditAction 1476970441389 PlanetExplorer.java 4372 20 36 0
