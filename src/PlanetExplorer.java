@@ -57,6 +57,7 @@ public class PlanetExplorer {
 		 */
 		if (command.length() > 1) {
 			pos= this.executeCommand(command.substring(0, 1));
+			System.out.println(pos);
 			return this.executeCommand(command.substring(1, command.length()));
 
 		}else if (command=="") {
