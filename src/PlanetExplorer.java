@@ -40,6 +40,8 @@ public class PlanetExplorer {
 		pos+=",";
 		pos+="N";
 		pos+=")";
+		Char pointTo=pos.charAt(5);
+
 
 		/* The command string is composed of "f" (forward), "b" (backward), "l" (left) and "r" (right)
 		 * Example: 
