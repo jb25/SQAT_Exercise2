@@ -258,3 +258,6 @@ RefactoringAction 1476968485290 TestPlanetExplorer.java ADD void test_TurnLeft()
 RefactoringAction 1476968485291 TestPlanetExplorer.java ADD void test_TurnFordward() METHOD
 RefactoringAction 1476968485292 TestPlanetExplorer.java ADD void test_TurnBackward() METHOD
 EditAction 1476968486474 TestPlanetExplorer.java 1149 8 17 7
+UnitTestCaseAction 1476968487170 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1476968487171 TestPlanetExplorer.java FAIL
+EditAction 1476968535005 PlanetExplorer.java 3476 17 32 0
