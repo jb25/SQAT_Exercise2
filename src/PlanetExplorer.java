@@ -99,6 +99,7 @@ public class PlanetExplorer {
 		switch (pointTo) {
 		case 'N':
 			setDir('W');
+			System.out.println(getDir());
 		case 'E':
 			setDir( 'N');
 		case 'S':
