@@ -42,7 +42,6 @@ public class PlanetExplorer {
 		pos+="N";
 		pos+=")";
 
-System.out.println(pos.charAt(pos.length()-2));
 		/* The command string is composed of "f" (forward), "b" (backward), "l" (left) and "r" (right)
 		 * Example: 
 		 * The explorer is on a 100x100 grid at location (0, 0) and facing NORTH. 
@@ -57,10 +56,10 @@ System.out.println(pos.charAt(pos.length()-2));
 		if (command=="") {
 			return pos;
 		} else if (command.equals("r")) {
-			pos.replace(pos.charAt(5), turnRight(pos.charAt(5)));
+			pos.replace(pos.charAt(5), turnRight(pos.charAt(pos.length()-2)));
 			return pos;
 		}else if (command.equals("l")) {
-			pos.replace(pos.charAt(5), turnLeft((pos.charAt(5))));
+			pos.replace(pos.charAt(5), turnLeft(pos.charAt(pos.length()-2)));
 			return pos;
 		}
 
