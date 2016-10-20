@@ -64,3 +64,14 @@ RefactoringAction 1476965217605 PlanetExplorer.java RENAME turnRi=>void turnRigh
 RefactoringAction 1476965218639 PlanetExplorer.java RENAME turnRight=>void turnRight() METHOD
 EditAction 1476965223413 PlanetExplorer.java 2064 12 21 0
 EditAction 1476965300078 PlanetExplorer.java 2095 12 22 0
+CompilationAction 1476965300293 PlanetExplorer.java
+RefactoringAction 1476965337144 PlanetExplorer.java RENAME turnRight()=>void turnRight(char) METHOD
+CompilationAction 1476965357599 PlanetExplorer.java
+CompilationAction 1476965357765 PlanetExplorer.java
+CompilationAction 1476965357765 PlanetExplorer.java
+CompilationAction 1476965429725 PlanetExplorer.java
+CompilationAction 1476965429725 PlanetExplorer.java
+CompilationAction 1476965429875 PlanetExplorer.java
+CompilationAction 1476965470369 PlanetExplorer.java
+CompilationAction 1476965470528 PlanetExplorer.java
+EditAction 1476965476489 PlanetExplorer.java 2274 12 23 0

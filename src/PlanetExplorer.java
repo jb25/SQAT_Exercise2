@@ -40,7 +40,7 @@ public class PlanetExplorer {
 		pos+=",";
 		pos+="N";
 		pos+=")";
-		Char pointTo=pos.charAt(5);
+		Character pointTo=pos.charAt(5);
 
 
 		/* The command string is composed of "f" (forward), "b" (backward), "l" (left) and "r" (right)
@@ -57,7 +57,7 @@ public class PlanetExplorer {
 		if (command=="") {
 			return pos;
 		} else if (command.equals("r")) {
-
+			pointTo=pos.charAt(5);
 
 
 		}
@@ -65,9 +65,18 @@ public class PlanetExplorer {
 
 		return pos;
 	}
-	public void turnRight(){
+	public Character turnRight(char pointTo){
+		switch (pointTo) {
+		case 'N':
+			return 'E';
+		case 'E':
+			return 'S';
+		case 'S':
+			return 'W';
+		case 'W':
+			return 'N';
 
-
+		}
 	}
 	public int getX() {
 		return x;
