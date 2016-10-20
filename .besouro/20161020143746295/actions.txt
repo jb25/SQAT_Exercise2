@@ -144,3 +144,6 @@ RefactoringAction 1476966709728 TestPlanetExplorer.java RENAME test_TurnBackward
 RefactoringAction 1476966711239 TestPlanetExplorer.java RENAME test_TurnBack()=>void test_Turn() METHOD
 RefactoringAction 1476966713751 TestPlanetExplorer.java RENAME test_Turn()=>void test_TurnFordward() METHOD
 EditAction 1476966809254 TestPlanetExplorer.java 1010 7 15 6
+UnitTestCaseAction 1476966810039 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1476966810040 TestPlanetExplorer.java FAIL
+EditAction 1476966929504 PlanetExplorer.java 3011 13 31 0

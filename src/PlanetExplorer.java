@@ -62,6 +62,24 @@ public class PlanetExplorer {
 			pos= pos.replace(pos.charAt(pos.length()-2), turnRight(pos.charAt(pos.length()-2)));
 		}else if (command.equals("l")) {
 			pos=pos.replace(pos.charAt(pos.length()-2), turnLeft(pos.charAt(pos.length()-2)));
+		} if (command.equals("f")) {
+			setPosY(posY+1);
+			pos="(";
+			pos+=getPosX();
+			pos+=",";
+			pos+= getPosY();
+			pos+=",";
+			pos+="N";
+			pos+=")";
+		} if (command.equals("b")) {
+			setPosX(posX-1);
+						pos="(";
+			pos+=getPosX();
+			pos+=",";
+			pos+= getPosY();
+			pos+=",";
+			pos+="N";
+			pos+=")";
 		}
 
 		return pos;
