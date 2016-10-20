@@ -131,14 +131,14 @@ public class PlanetExplorer {
 			setPosY(posY+1);
 			break;
 		case 'E':
-			setX(getX()+1);
+			setPosX(getX()+1);
 			break;
 		case 'S':
 			setPosY(posY-1);
 			break;
 
 		case 'W':
-			setX(getX()-1);
+			setPosX(getX()-1);
 			break;
 
 
@@ -150,13 +150,13 @@ public class PlanetExplorer {
 			setPosY(posY-1);
 			break;
 		case 'E':
-			setX(getX()-1);
+			setPosX(getX()-1);
 			break;
 		case 'S':
 			setPosY(posY+1);
 			break;
 		case 'W':
-			setX(getX()+1);
+			setPosX(getX()+1);
 			break;
 		}
 	}
