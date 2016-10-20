@@ -141,16 +141,16 @@ public class PlanetExplorer {
 	public void Backward(){
 		switch (getDir()) {
 		case 'N':
-			setPosY(posY-1);
+			setPosY(getPosY()-1);
 			break;
 		case 'E':
-			setPosX(getX()-1);
+			setPosX(getPosX()-1);
 			break;
 		case 'S':
-			setPosY(posY+1);
+			setPosY(getPosY()+1);
 			break;
 		case 'W':
-			setPosX(getX()+1);
+			setPosX(getPosX()+1);
 			break;
 		}
 	}

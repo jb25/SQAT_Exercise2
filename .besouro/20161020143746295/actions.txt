@@ -332,3 +332,6 @@ RefactoringAction 1476969737465 TestPlanetExplorer.java ADD void test_TurnFordwa
 RefactoringAction 1476969740978 TestPlanetExplorer.java ADD void test_MovingAndTurningCombined() METHOD
 EditAction 1476969743318 PlanetExplorer.java 3965 19 35 0
 EditAction 1476969743594 TestPlanetExplorer.java 1198 8 19 7
+UnitTestCaseAction 1476969744242 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1476969744243 TestPlanetExplorer.java FAIL
+EditAction 1476969809146 PlanetExplorer.java 3981 19 35 0
