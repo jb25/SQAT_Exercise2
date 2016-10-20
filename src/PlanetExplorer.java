@@ -59,6 +59,10 @@ public class PlanetExplorer {
 		if (command.length() > 1) {
 			this.executeCommand(command.substring(0, 1));
 			return this.executeCommand(command.substring(1, command.length()));
+			for (int i = 0; i < command.length(); i++) {
+
+			}
+
 		}
 		if (command=="") {
 		} else if (command.equals("r")) {
@@ -76,7 +80,7 @@ public class PlanetExplorer {
 			pos+=")";
 		} if (command.equals("b")) {
 			setPosX(posX-1);
-						pos="(";
+			pos="(";
 			pos+=getPosX();
 			pos+=",";
 			pos+= getPosY();
