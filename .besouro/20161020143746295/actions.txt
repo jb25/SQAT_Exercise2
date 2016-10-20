@@ -158,3 +158,6 @@ RefactoringAction 1476967032253 TestPlanetExplorer.java RENAME test_MovingAnd()=
 RefactoringAction 1476967034267 TestPlanetExplorer.java RENAME test_MovingAndT()=>void test_MovingAndTurning() METHOD
 RefactoringAction 1476967036787 TestPlanetExplorer.java RENAME test_MovingAndTurning()=>void test_MovingAndTurningCombined() METHOD
 EditAction 1476967124873 TestPlanetExplorer.java 1149 8 17 7
+UnitTestCaseAction 1476967125598 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1476967125599 TestPlanetExplorer.java FAIL
+EditAction 1476967150279 PlanetExplorer.java 3164 13 32 0

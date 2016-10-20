@@ -56,7 +56,10 @@ public class PlanetExplorer {
 		 * The return string should also contain a list of coordinates of the encountered obstacles. No white spaces.
 		 */
 
-
+		if (command.length() > 1) {
+			this.executeCommand(command.substring(0, 1));
+			return this.executeCommand(command.substring(1, command.length()));
+		}
 		if (command=="") {
 		} else if (command.equals("r")) {
 			pos= pos.replace(pos.charAt(pos.length()-2), turnRight(pos.charAt(pos.length()-2)));
