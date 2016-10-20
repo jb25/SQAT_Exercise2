@@ -25,3 +25,4 @@ RefactoringAction 1476964097878 TestPlanetExplorer.java RENAME test_PlanetCreate
 RefactoringAction 1476964109905 TestPlanetExplorer.java RENAME test_Landing()=>void test_LandingEmpty() METHOD
 RefactoringAction 1476964111928 TestPlanetExplorer.java RENAME test_LandingEmpty()=>void test_LandingEmptyComand() METHOD
 EditAction 1476964163804 TestPlanetExplorer.java 511 3 7 1
+EditAction 1476964203782 TestPlanetExplorer.java 545 3 8 2
