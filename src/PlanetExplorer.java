@@ -89,25 +89,33 @@ public class PlanetExplorer {
 			break;
 		case 'E':
 			setDir( 'S');
+			break;
 		case 'S':
 			setDir( 'W');
+			break;
+
 		case 'W':
 			setDir( 'N');
+			break;
+
 
 		}
-		System.out.println(getDir());
 		return getDir();
 	}
 	public Character turnLeft(char pointTo){
 		switch (pointTo) {
 		case 'N':
 			setDir('W');
+			break;
 		case 'E':
 			setDir( 'N');
+			break;
 		case 'S':
 			setDir( 'E');
+			break;
 		case 'W':
 			setDir( 'S');
+			break;
 
 		}
 		return getDir();
