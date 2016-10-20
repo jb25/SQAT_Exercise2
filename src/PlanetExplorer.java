@@ -60,6 +60,7 @@ public class PlanetExplorer {
 		if (command=="") {
 			return pos;
 		} else if (command.equals("r")) {
+			System.out.println(pos);
 			pos.replace(pos.charAt(5), turnRight(pos.charAt(pos.length()-2)));
 			return pos;
 		}else if (command.equals("l")) {
