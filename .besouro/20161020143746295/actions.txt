@@ -288,3 +288,12 @@ EditAction 1476969498459 TestPlanetExplorer.java 1208 7 17 6
 UnitTestCaseAction 1476969499160 TestPlanetExplorer.java FAIL
 UnitTestSessionAction 1476969499161 TestPlanetExplorer.java FAIL
 EditAction 1476969532566 PlanetExplorer.java 3987 19 35 0
+UnitTestCaseAction 1476969533377 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1476969533378 TestPlanetExplorer.java FAIL
+RefactoringAction 1476969546312 TestPlanetExplorer.java REMOVE test_executeCommand() METHOD
+RefactoringAction 1476969546313 TestPlanetExplorer.java REMOVE test_TurnFordward() METHOD
+RefactoringAction 1476969546314 TestPlanetExplorer.java REMOVE test_TurnLeft() METHOD
+RefactoringAction 1476969546315 TestPlanetExplorer.java REMOVE test_LandingEmptyComand() METHOD
+RefactoringAction 1476969546315 TestPlanetExplorer.java REMOVE test_TurnRight() METHOD
+RefactoringAction 1476969546316 TestPlanetExplorer.java REMOVE test_PlanetCreate() METHOD
+EditAction 1476969547030 TestPlanetExplorer.java 1288 1 5 1
