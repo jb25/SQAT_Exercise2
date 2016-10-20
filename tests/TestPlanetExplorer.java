@@ -19,11 +19,12 @@ public class TestPlanetExplorer {
 
 		assertTrue(ok);
 	}
+	
 	@Test
 	public void test_LandingEmptyComand() {
 		PlanetExplorer pe= new PlanetExplorer(100,100);
 
 		String status= pe.executeCommand("");
-		assertEquals(")0.0,N)", status);
+		assertEquals("(0.0,N)", status);
 	}
 }

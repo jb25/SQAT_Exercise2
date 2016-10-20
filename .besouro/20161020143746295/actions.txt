@@ -26,3 +26,6 @@ RefactoringAction 1476964109905 TestPlanetExplorer.java RENAME test_Landing()=>v
 RefactoringAction 1476964111928 TestPlanetExplorer.java RENAME test_LandingEmpty()=>void test_LandingEmptyComand() METHOD
 EditAction 1476964163804 TestPlanetExplorer.java 511 3 7 1
 EditAction 1476964203782 TestPlanetExplorer.java 545 3 8 2
+RefactoringAction 1476964527822 PlanetExplorer.java ADD String facing FIELD
+RefactoringAction 1476964528847 PlanetExplorer.java RENAME facing=>String f FIELD
+EditAction 1476964637607 TestPlanetExplorer.java 547 3 8 2
