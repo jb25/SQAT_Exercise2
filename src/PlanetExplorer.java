@@ -24,6 +24,8 @@ public class PlanetExplorer {
 
 		setX(x);
 		setY(y);
+		setPosX(0);
+		setPosY(0);
 
 	}
 
@@ -31,13 +33,15 @@ public class PlanetExplorer {
 		// TODO Auto-generated constructor stub
 		setX(x);
 		setY(y);
+		setPosX(0);
+		setPosY(0);
 	}
 
 	public String executeCommand(String command){
 		String pos="(";
-		pos+=getX();
+		pos+=getPosX();
 		pos+=",";
-		pos+= getY();
+		pos+= getPosY();
 		pos+=",";
 		pos+="N";
 		pos+=")";
