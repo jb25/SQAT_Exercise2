@@ -66,16 +66,24 @@ public class PlanetExplorer {
 
 		}else if (command.equals("l")) {
 			pos=pos.replace(pos.charAt(pos.length()-2), turnLeft(getDir()));
-		} if (command.equals("f")) {
+		} else if (command.equals("f")) {
 			dir=pos.charAt(pos.length()-2);
 			Forward();
 			pos="("+getPosX()+","+getPosY()+","+dir+")";
 
-		} if (command.equals("b")) {
+		} else if (command.equals("b")) {
 			dir=pos.charAt(pos.length()-2);
 			Backward();
 			pos="("+getPosX()+","+getPosY()+","+dir+")";
 
+		}else 	if (getPosX() < 0) {
+			setPosX(getPosX()+getX());
+		} else if (getPosY() < 0) {
+			setPosY(getPosY()+getY());
+		} else if (getPosX()>= getX()) {
+			setPosX(getPosX()-getX());
+		} else if (getPosY() >= getY()) {
+			setPosY(getPosY()-getY());
 		}
 
 		return pos;
@@ -128,7 +136,7 @@ public class PlanetExplorer {
 			setPosX(getPosX()+1);
 			break;
 		case 'S':
-			setPosY(pgetPosY()-1);
+			setPosY(getPosY()-1);
 			break;
 
 		case 'W':
