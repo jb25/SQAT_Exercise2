@@ -65,7 +65,8 @@ public class PlanetExplorer {
 		} else if (getPosY() >= getY()) {
 			setPosY(getPosY()-getY());
 		}
-		
+		pos="("+getPosX()+","+getPosY()+","+dir+")";
+System.out.println(pos);
 		
 		
 		
