@@ -72,7 +72,6 @@ public class PlanetExplorer {
 			pos="("+getPosX()+","+getPosY()+","+dir+")";
 
 		} if (command.equals("b")) {
-			System.out.println(pos);
 			dir=pos.charAt(pos.length()-2);
 			Backward();
 			pos="("+getPosX()+","+getPosY()+","+dir+")";
