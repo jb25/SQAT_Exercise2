@@ -4,13 +4,15 @@ import org.junit.Test;
 
 public class TestPlanetExplorer {
 
+	PlanetExplorer pe= new PlanetExplorer(100,100);
+
+
 	@Test
 	public void test_executeCommand() {
 		fail("Not yet implemented");
 	}
 	@Test
 	public void test_PlanetCreate() {
-		PlanetExplorer pe= new PlanetExplorer(100,100);
 
 		boolean ok= false;
 		if (100==pe.getX() && 100==pe.getY()) {
@@ -19,12 +21,23 @@ public class TestPlanetExplorer {
 
 		assertTrue(ok);
 	}
-	
+
 	@Test
 	public void test_LandingEmptyComand() {
-		PlanetExplorer pe= new PlanetExplorer(100,100);
 
 		String status= pe.executeCommand("");
-		assertEquals("(0.0,N)", status);
+		assertEquals("(0,0,N)", status);
+	}
+
+	@Test
+	public void test_TurnRight() {
+		String status= pe.executeCommand("r");
+		assertEquals("(0,0,E)", status);
+	}
+	
+	@Test
+	public void test_TurnLeft() {
+		String status= pe.executeCommand("l");
+		assertEquals("(0,0,W)", status);
 	}
 }
