@@ -75,6 +75,8 @@ public class PlanetExplorer {
 			System.out.println("ieppp");
 			dir=pos.charAt(pos.length()-2);
 			Backward();
+			System.out.println(pos);
+
 			pos="("+getPosX()+","+getPosY()+","+dir+")";
 			System.out.println(pos);
 
