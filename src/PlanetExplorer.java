@@ -56,11 +56,14 @@ public class PlanetExplorer {
 		 * The return string should also contain a list of coordinates of the encountered obstacles. No white spaces.
 		 */
 		if (command.length() > 1) {
+			System.out.println(pos);
 			pos= this.executeCommand(command.substring(0, 1));
 			System.out.println(pos);
 			return this.executeCommand(command.substring(1, command.length()));
 
-		}else if (command=="") {
+		}else 			System.out.println(pos+ "     a");
+
+			if (command=="") {
 		} else if (command.equals("r")) {
 			pos= pos.replace(pos.charAt(pos.length()-2), turnRight(getDir()));
 
