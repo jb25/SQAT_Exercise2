@@ -95,6 +95,7 @@ public class PlanetExplorer {
 		return getDir();
 	}
 	public Character turnLeft(char pointTo){
+		System.out.println(pointTo);
 		switch (pointTo) {
 		case 'N':
 			setDir('W');
