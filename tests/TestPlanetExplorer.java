@@ -19,4 +19,11 @@ public class TestPlanetExplorer {
 
 		assertTrue(ok);
 	}
+	@Test
+	public void test_LandingEmptyComand() {
+		PlanetExplorer pe= new PlanetExplorer(100,100);
+
+		String status= pe.executeCommand("");
+
+	}
 }

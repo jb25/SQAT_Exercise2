@@ -20,3 +20,8 @@ CompilationAction 1476964030784 TestPlanetExplorer.java
 CompilationAction 1476964030785 TestPlanetExplorer.java
 CompilationAction 1476964030785 TestPlanetExplorer.java
 EditAction 1476964041734 PlanetExplorer.java 1617 7 9 0
+RefactoringAction 1476964090332 TestPlanetExplorer.java ADD void test_PlanetCreate()/2 METHOD
+RefactoringAction 1476964097878 TestPlanetExplorer.java RENAME test_PlanetCreate()/2=>void test_Landing() METHOD
+RefactoringAction 1476964109905 TestPlanetExplorer.java RENAME test_Landing()=>void test_LandingEmpty() METHOD
+RefactoringAction 1476964111928 TestPlanetExplorer.java RENAME test_LandingEmpty()=>void test_LandingEmptyComand() METHOD
+EditAction 1476964163804 TestPlanetExplorer.java 511 3 7 1
