@@ -62,7 +62,7 @@ public class PlanetExplorer {
 		} else if (command.equals("r")) {
 			System.out.println(pos);
 			pos.replace(pos.charAt(5), turnRight(pos.charAt(pos.length()-2)));
-			System.out.println(pos);
+			System.out.println(turnRight(pos.charAt(pos.length()-2)));
 
 			return pos;
 		}else if (command.equals("l")) {
@@ -74,7 +74,6 @@ public class PlanetExplorer {
 		return pos;
 	}
 	public Character turnRight(char pointTo){
-		System.out.println(pointTo);
 		switch (pointTo) {
 		case 'N':
 			return 'E';
