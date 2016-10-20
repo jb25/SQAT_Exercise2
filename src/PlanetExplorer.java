@@ -58,15 +58,13 @@ public class PlanetExplorer {
 
 
 		if (command=="") {
-			return pos;
 		} else if (command.equals("r")) {
 			pos.replace(pos.charAt(pos.length()-2), turnRight(pos.charAt(pos.length()-2)));
-			return pos;
 		}else if (command.equals("l")) {
 			pos.replace(pos.charAt(pos.length()-2), turnLeft(pos.charAt(pos.length()-2)));
-			return pos;
 		}
 
+		return pos;
 
 	}
 	public Character turnRight(char pointTo){
