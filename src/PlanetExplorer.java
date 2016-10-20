@@ -56,6 +56,19 @@ public class PlanetExplorer {
 		 * Where pos_x and pos_y are the final coordinates, facing is the current direction the explorer is pointing to (N,S,W,E).
 		 * The return string should also contain a list of coordinates of the encountered obstacles. No white spaces.
 		 */
+		if (getPosX() < 0) {
+			setPosX(getPosX()+getX());
+		} else if (getPosY() < 0) {
+			setPosY(getPosY()+getY());
+		} else if (getPosX()>= getX()) {
+			setPosX(getPosX()-getX());
+		} else if (getPosY() >= getY()) {
+			setPosY(getPosY()-getY());
+		}
+		
+		
+		
+		
 		if (command.length() > 1) {
 			pos= this.executeCommand(command.substring(0, 1));
 			return this.executeCommand(command.substring(1, command.length()));
@@ -76,15 +89,10 @@ public class PlanetExplorer {
 			Backward();
 			pos="("+getPosX()+","+getPosY()+","+dir+")";
 
-		}else 	if (getPosX() < 0) {
-			setPosX(getPosX()+getX());
-		} else if (getPosY() < 0) {
-			setPosY(getPosY()+getY());
-		} else if (getPosX()>= getX()) {
-			setPosX(getPosX()-getX());
-		} else if (getPosY() >= getY()) {
-			setPosY(getPosY()-getY());
 		}
+		
+		
+		
 
 		
 		pos="("+getPosX()+","+getPosY()+","+dir+")";
