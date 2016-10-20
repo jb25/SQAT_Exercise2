@@ -10,6 +10,7 @@ public class PlanetExplorer {
 	private int y;
 	private int posX;
 	private int posY;
+	private char dir;
 	//	private String f;
 
 	public PlanetExplorer(int x, int y, String obstacles){
@@ -40,9 +41,8 @@ public class PlanetExplorer {
 		pos+=",";
 		pos+="N";
 		pos+=")";
-		Character pointTo=pos.charAt(5);
 
-
+System.out.println(pos);
 		/* The command string is composed of "f" (forward), "b" (backward), "l" (left) and "r" (right)
 		 * Example: 
 		 * The explorer is on a 100x100 grid at location (0, 0) and facing NORTH. 
@@ -57,9 +57,11 @@ public class PlanetExplorer {
 		if (command=="") {
 			return pos;
 		} else if (command.equals("r")) {
-			pos.replace(pos.charAt(5), turnRight(pointTo=pos.charAt(5)));
+			pos.replace(pos.charAt(5), turnRight(pos.charAt(5)));
+			return pos;
 		}else if (command.equals("l")) {
-			pos.replace(pos.charAt(5), turnLeft((pointTo=pos.charAt(5)));
+			pos.replace(pos.charAt(5), turnLeft((pos.charAt(5))));
+			return pos;
 		}
 
 

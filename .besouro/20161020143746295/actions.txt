@@ -83,3 +83,16 @@ RefactoringAction 1476965516208 PlanetExplorer.java RENAME turn(char)=>Character
 CompilationAction 1476965558968 PlanetExplorer.java
 CompilationAction 1476965559120 PlanetExplorer.java
 EditAction 1476965700638 PlanetExplorer.java 2626 13 16 0
+CompilationAction 1476965700867 PlanetExplorer.java
+CompilationAction 1476965709918 PlanetExplorer.java
+CompilationAction 1476965710075 PlanetExplorer.java
+CompilationAction 1476965710075 PlanetExplorer.java
+CompilationAction 1476965731776 PlanetExplorer.java
+CompilationAction 1476965731777 PlanetExplorer.java
+RefactoringAction 1476965833852 PlanetExplorer.java ADD char direction FIELD
+RefactoringAction 1476965838380 PlanetExplorer.java RENAME direction=>char dir FIELD
+UnitTestCaseAction 1476965989276 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1476965989277 TestPlanetExplorer.java FAIL
+UnitTestCaseAction 1476966062506 TestPlanetExplorer.java FAIL
+UnitTestSessionAction 1476966062506 TestPlanetExplorer.java FAIL
+EditAction 1476966089044 PlanetExplorer.java 2649 13 26 0
