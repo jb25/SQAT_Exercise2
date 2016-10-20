@@ -57,9 +57,9 @@ public class PlanetExplorer {
 		if (command=="") {
 			return pos;
 		} else if (command.equals("r")) {
-			pointTo=pos.charAt(5);
-
-
+			pos.replace(pos.charAt(5), turnRight(pointTo=pos.charAt(5)));
+		}else if (command.equals("l")) {
+			pos.replace(pos.charAt(5), turnLeft((pointTo=pos.charAt(5)));
 		}
 
 
@@ -77,6 +77,21 @@ public class PlanetExplorer {
 			return 'N';
 
 		}
+		return pointTo;
+	}
+	public Character turnLeft(char pointTo){
+		switch (pointTo) {
+		case 'N':
+			return 'W';
+		case 'E':
+			return 'N';
+		case 'S':
+			return 'E';
+		case 'W':
+			return 'S';
+
+		}
+		return pointTo;
 	}
 	public int getX() {
 		return x;

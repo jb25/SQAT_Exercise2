@@ -75,3 +75,11 @@ CompilationAction 1476965429875 PlanetExplorer.java
 CompilationAction 1476965470369 PlanetExplorer.java
 CompilationAction 1476965470528 PlanetExplorer.java
 EditAction 1476965476489 PlanetExplorer.java 2274 12 23 0
+CompilationAction 1476965476742 PlanetExplorer.java
+RefactoringAction 1476965511127 PlanetExplorer.java ADD Character turnRight(char)/2 METHOD
+RefactoringAction 1476965513146 PlanetExplorer.java RENAME turnRight(char)/2=>Character turnRigh(char) METHOD
+RefactoringAction 1476965514174 PlanetExplorer.java RENAME turnRigh(char)=>Character turn(char) METHOD
+RefactoringAction 1476965516208 PlanetExplorer.java RENAME turn(char)=>Character turnLeft(char) METHOD
+CompilationAction 1476965558968 PlanetExplorer.java
+CompilationAction 1476965559120 PlanetExplorer.java
+EditAction 1476965700638 PlanetExplorer.java 2626 13 16 0
